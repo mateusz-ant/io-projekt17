@@ -1,0 +1,20 @@
+*.iml
+.idea/
+**/target/**
+**/bin/**
+**/tmp/**
+.project
+.classpath
+.settings
+.launch
+
+*.properties
+*.jar
+*.war
+
+# Logging-related
+logback.xml
+logback-test.xml
+/logs
+
+Thumbs.db

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <name>Projekt17 :: WebApp :: Persistence</name>
+    <parent>
+        <artifactId>projekt17-webapp</artifactId>
+        <groupId>pl.edu.agh.informatyka.io</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>projekt17-webapp-persistence</artifactId>
+    <properties>
+        <postgresql.version>9.1-901-1.jdbc4</postgresql.version>
+        <genericdao.version>1.2.0</genericdao.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>pl.edu.agh.informatyka.io</groupId>
+            <artifactId>projekt17-webapp-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--Postgresql JDBC-->
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+
+        <!--Spring ORM-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+
+        <!--Generic DAO-->
+        <dependency>
+            <groupId>com.googlecode.genericdao</groupId>
+            <artifactId>dao-hibernate</artifactId>
+            <version>${genericdao.version}</version>
+        </dependency>
+    </dependencies>
+</project>
